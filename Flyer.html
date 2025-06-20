@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inspire Church Kingdom Man Ministry - Series 33 Cadre</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap');
+
+  /*
+    Color Palette based on authenticmanhood.com:
+    - Dark Charcoal: #212121
+    - Medium Gray: #333333
+    - Red-Orange Accent: #E64A19
+    - White/Light Text: #FFFFFF / #f0f0f0
+  */
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #212121;
+  }
+
+  .flyer-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #333333;
+    border: 6px solid #E64A19;
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden; 
+  }
+
+  .header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #E64A19;
+  }
+
+  .header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-transform: uppercase;
+  }
+
+  .header h2 {
+    font-size: 1.5em;
+    color: #f0f0f0;
+    margin: 10px 0 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .header .sub-header {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.8em;
+      color: #E64A19;
+      margin-top: 20px;
+      text-transform: uppercase;
+  }
+
+  .main-content {
+    padding: 30px 40px;
+    text-align: center;
+  }
+
+  .main-content h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #E64A19;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .main-content p {
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .details-box {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid #444;
+    padding: 25px;
+    margin: 40px auto;
+    border-radius: 10px;
+    max-width: 700px;
+  }
+
+  .details-box h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2em;
+      color: #E64A19;
+      margin-top: 0;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #E64A19;
+      padding-bottom: 15px;
+      text-transform: uppercase;
+  }
+
+  .details-box ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    text-align: left;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .details-box ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .details-box ul li:hover {
+    background-color: rgba(230, 74, 25, 0.1);
+  }
+  
+  .details-box ul li strong {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    min-width: 140px; 
+    margin-right: 15px;
+    font-weight: 500;
+  }
+
+  /* Curriculum Section */
+  .curriculum-section {
+    padding: 30px 20px;
+    background-color: #212121;
+    text-align: center;
+  }
+
+  .curriculum-section h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #E64A19;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #E64A19;
+    padding-bottom: 15px;
+  }
+  
+  .trailers-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #f0f0f0;
+    text-decoration: none;
+    border: 1px solid #E64A19;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .trailers-link:hover {
+    background-color: #E64A19;
+    color: #ffffff;
+  }
+
+  .volumes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .volume-card {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #E64A19;
+  }
+
+  .volume-card h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .volume-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #f0f0f0;
+    margin-bottom: 0;
+  }
+
+  .footer {
+    padding: 30px 20px;
+    background-color: #212121;
+    text-align: center;
+    border-top: 4px solid #333333;
+  }
+
+  .footer h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5em;
+      color: #E64A19;
+      margin: 0 0 15px 0;
+      text-transform: uppercase;
+  }
+
+  .footer p {
+    margin: 5px 0;
+    font-size: 1.2em;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .header h1 { font-size: 2.8em; }
+    .header h2 { font-size: 1.2em; }
+    .main-content h3 { font-size: 2.2em; }
+    .main-content p, .details-box ul, .footer p { font-size: 1em; }
+    .trailers-link { font-size: 1em; }
+    .details-box ul li {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .details-box ul li strong {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="flyer-container">
+    <div class="header">
+      <h2>Inspire Church</h2>
+      <h1>Kingdom Man Ministry</h1>
+      <p class="sub-header">Looking for a cadre before Man Camp?</p>
+    </div>
+
+    <div class="main-content">
+      <h3>Man Camp Prep and 33 Series Cadre</h3>
+      <p>This is a call to men who are ready to reject passivity, accept responsibility, lead courageously, and invest eternally. Join a committed cadre of 4-6 men as we go through the 33 Series, forging character on the timeless blueprint of Jesus Christ.</p>
+
+      <div class="details-box">
+        <h4>Cadre Details</h4>
+        <ul>
+          <li><strong>STARTS:</strong> <span>Saturday, July 12, 2025</span></li>
+          <li><strong>WHEN:</strong> <span>Every Saturday at 8:00 AM</span></li>
+          <li><strong>WHERE:</strong> <span>Online Virtual Meetings</span></li>
+          <li><strong>GATHERING:</strong> <span>In person every 4th week for coffee & breakfast.</span></li>
+          <li><strong>DURATION:</strong> <span>Approx. 12-16 months to cover all volumes.</span></li>
+          <li><strong>MATERIALS:</strong> <span>Series 33 workbooks (~$15 per Vol).</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="curriculum-section">
+        <h3>The 6-Volume Journey</h3>
+        <a href="https://www.authenticmanhood.com/video-trailers" target="_blank" class="trailers-link">Watch Volume Trailers Here</a>
+        <div class="volumes-grid">
+            <div class="volume-card">
+                <h5>Vol 1: A Man and His Design</h5>
+                <p>Establishes the foundations of biblical manhood, exploring God's clear design for men and helping you navigate cultural confusion.</p>
+            </div>
+            <div class="volume-card">
+                <h5>Vol 2: A Man and His Story</h5>
+                <p>Equips you to understand your past, embrace your present, and prepare for a better future by looking at your story through a biblical lens.</p>
+            </div>
+            <div class="volume-card">
+                <h5>Vol 3: A Man and His Traps</h5>
+                <p>Provides practical strategies to identify and overcome the common traps and temptations that can derail a man's life and integrity.</p>
+            </div>
+            <div class="volume-card">
+                <h5>Vol 4: A Man and His Work</h5>
+                <p>Helps you find meaning and fulfillment in your career by aligning your work with God's greater purpose for your life.</p>
+            </div>
+            <div class="volume-card">
+                <h5>Vol 5: A Man and His Marriage</h5>
+                <p>Offers a biblical vision and practical ideas to bring new health, strength, and life to your marriage, covering friendship, intimacy, and more.</p>
+            </div>
+            <div class="volume-card">
+                <h5>Vol 6: A Man and His Fatherhood</h5>
+                <p>Presents a strategic, grace-based plan for raising sons and daughters, preparing you to launch them into the world with purpose.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+      <h4>For more information or to join the cadre:</h4>
+      <p>Cadre Leader: David Johnson</p>
+      <p>Phone: 715 307-2055</p>
+    </div>
+  </div>
+
+</body>
+</html>
